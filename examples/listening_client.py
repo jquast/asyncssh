@@ -34,7 +34,7 @@ def run_client():
         if server:
             yield from server.wait_closed()
         else:
-            print('Listener couldn''t be opened.', file=sys.stderr)
+            print('Listener couldn\'t be opened.', file=sys.stderr)
 
 try:
     asyncio.get_event_loop().run_until_complete(run_client())
